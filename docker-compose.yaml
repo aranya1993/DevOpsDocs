@@ -1,21 +1,21 @@
-- wordpress :
-     image : wordpress
-     links :
+- wordpress:
+     image: wordpress
+     links:
         - wordpress_db:mysql
-     ports :
+     ports:
         - 4000:80
 
-- wordpress_db :
-     image : wariadb
-     environment :
+- wordpress_db:
+     image: wariadb
+     environment:
         MYSQL_ROOT_PASSWORD:edureka
         
-- phpmyadmin :
-     image : corbin
-     links :
+- phpmyadmin:
+     image: corbin
+     links:
         - wordpress_db:mysql
-     ports :
+     ports:
         - 8181:80
-     environment :
+     environment:
         MYSQL_USERNAME:root
         MYSQL_ROOT_PASSWORD:edureka
