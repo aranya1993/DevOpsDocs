@@ -15,7 +15,7 @@ Post the above setup stop the docker container: docker stop jenkins
 12.docker ps and stop the running old container: docker stop jenkins
 13.Remove images: docker rmi -f jenkins.
 14.Run the new container:
-docker run -p 8080:8080 -p 50000:50000 -v /var/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock --name jenkins -d jenkins-docker
+docker run -p 8080:8080 -p 50000:50000 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock --name jenkins -d jenkins-docker
 15.docker ps
 16. ls -ahl /var/run/docker.sock
 17 execute inside the running container: docker exec -it jenkins bash
