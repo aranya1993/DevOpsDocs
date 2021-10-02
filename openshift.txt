@@ -22,7 +22,7 @@ oc import-image python-app:1.1 --from=manee2k6/python-app:1.1
 
 Reference Link:
 
-https://dzone.com/articles/deploying-docker-images-to-openshift
+https://dzone.com/articles/deploying-docker-images-to-openshift  123
 
 
 
